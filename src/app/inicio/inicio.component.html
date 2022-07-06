@@ -1,3 +1,9 @@
-<p>
-  <span matBadge="4" matBadgeOverlap="false">Text with a badge</span>
-</p>
+<p>compp padre</p>
+<br>
+txtPadre:  {{txtPadre}}
+<br> 
+<button (click)="btnPadre()">BTN PADRE </button>
+<br>
+_________________________________
+<br>
+<app-hijo [nombreHijo]="txtPadre" (eventoCambioNombre)="sep($event) " ></app-hijo>

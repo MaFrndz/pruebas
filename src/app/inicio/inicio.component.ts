@@ -12,11 +12,22 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
 })
 export class InicioComponent implements OnInit {
 
+  txtPadre : string = '...'; 
+
   constructor( private router : Router) { }
   image : Observable<any>; 
 
   ngOnInit() {
   }
+
+  btnPadre( ){
+    this.txtPadre = 'desde padre'; 
+  }
+  
+  sep(xx : string){
+    this.txtPadre = xx; 
+  }
+
 
   selectFile(event){
     console.log(event.target.files.length);

@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
+import { HijoComponent } from './hijo/hijo.component';
+import { Hijo2Component } from './hijo2/hijo2.component';
 
 
 const appRoutes: Routes = [
@@ -24,7 +26,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     InicioComponent,
-    Prueba1Component, 
+    Prueba1Component,
+    HijoComponent,
+    Hijo2Component, 
   ],
   imports: [
     MatSliderModule,
