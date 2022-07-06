@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 
 import { Observable, Subscriber } from 'rxjs';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 
 @Component({

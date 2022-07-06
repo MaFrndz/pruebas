@@ -10,6 +10,8 @@ import { Prueba1Component } from './prueba1/prueba1.component';
 import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
 
 
 const appRoutes: Routes = [
@@ -25,11 +27,14 @@ const appRoutes: Routes = [
     Prueba1Component, 
   ],
   imports: [
+    MatSliderModule,
     FormsModule ,
     HttpClientModule,
     BrowserModule,
     
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes, { relativeLinkResolution: 'legacy' }),
+    
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
